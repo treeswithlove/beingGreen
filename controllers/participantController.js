@@ -18,28 +18,26 @@ const ParticipantController = {
     },
     // shows one participant
     show: function(req,res){
-        ParticipantModel.findById(req.params.id).then(participant => {
+        ParticipantModel.findById(req.params.participantId).then(participant => {
             res.render("participants/show", {participant})
         })
     },
     // creates a new participant
     create: function(req,res) {
         newParticipant = (req.body)
-        ParticipantModel.create(newParticipant).then(() => res.redirect("/participant"))
+        ParticipantModel.create(newParticipant).then(() => res.redirect("/participants"))
     },
     update: function(req,res){
-        ParticipantModel.findByIdAndUpdate(req.params.id, req.body).then(() => {
-            res.send()
+        ParticipantModel.findByIdAndUpdate(req.params.participantId, req.body).then(() => {
+            // res.render("participants/index", {participant})
+            res.redirect("/participants")
         })
     },
     delete: function(req,res){
-        ParticipantModel.findByIdAndDelete(req.params.id).then(() => {
-            res.redirect('/participant').catch((error) => {
-                console.log(error)
+        ParticipantModel.findByIdAndRemove(req.params.participantId).then(() => {
+            res.redirect("/participants")
             })
-        })
+        }
     }
-
-}
 
 module.exports = ParticipantController
