@@ -1,2 +1,6 @@
 {{!-- shows all participants --}}
-<h1>{{participants}}</h1>
+
+<h1>Participants</h1>
+{{#each participant}}
+<a href="/participants/{{id}}"><p>{{name}}</p></a>
+{{/each}}
