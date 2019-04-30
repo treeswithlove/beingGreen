@@ -1,2 +1,20 @@
 {{!-- shows one participant --}}
+<header>
+    {{!-- list of participant information --}}
 <h1>{{participant.name}}</h1>
+<h4>{{participant.age}}</h4>
+<h4>{{participant.city}}</h4>
+<h4>{{participant.state}}</h4>
+</header>
+<main>
+<form action="/participants/{{participant.id}}?_method=put" method="POST">
+    <p>Name</p><input type="text" name="name"></br>
+    <p>Age</p><input type="number" name="age"></br>
+    <p>City</p><input type="text" name="city"></br>
+    <p>State</p><input type="text" name="state"></br>
+    <input type="submit" value="Update Participant" class="button">
+</form>
+<form action="/participants/{{participant._id}}?_method=delete" method="POST">
+<input type="submit" value="Delete Participant" class="button">
+</form>
+</main>
