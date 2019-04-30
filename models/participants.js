@@ -3,9 +3,9 @@ const Schema = mongoose.Schema
 
 const ParticipantSchema = new Schema({
     name: String,
-    age: String,
+    age: Number,
     city: String,
-    state: String,
+    state: String
 })
 
 const ParticipantModel = mongoose.model("Participant", ParticipantSchema)
