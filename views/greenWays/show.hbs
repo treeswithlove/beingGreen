@@ -1,0 +1,21 @@
+{{!-- shows one greenWay --}}
+<header>
+    {{!-- list of greenWay information --}}
+<h4>{{greenWay.wayToBeGreenName}}</h4>
+<h4>{{greenWay.timeItTakes}}</h4>
+<h1>{{greenWay.whatToDo}}</h1>
+
+</header>
+<main>
+<form action="/greenWays/{{greenWay.id}}?_method=put" method="POST">
+    <p>Name of Green Method:</p><input type="text" name="wayToBeGreenName"></br>
+    <p>Hours it Takes: </p><input type="number" name="timeItTakes"></br>
+    <p>What to Do:</p><input type="text" name="whatToDo"></br>
+{{!-- Update Button --}}
+    <input type="submit" value="Update greenWay" class="button">
+</form>
+<form action="/greenWays/{{greenWay._id}}?_method=delete" method="POST">
+{{!-- delete Button --}}
+<input type="submit" value="Delete GreenWay" class="button">
+</form>
+</main>

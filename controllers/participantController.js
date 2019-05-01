@@ -29,7 +29,6 @@ const ParticipantController = {
     },
     update: function(req,res){
         ParticipantModel.findByIdAndUpdate(req.params.participantId, req.body).then(() => {
-            // res.render("participants/index", {participant})
             res.redirect("/participants")
         })
     },

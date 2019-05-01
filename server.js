@@ -4,7 +4,7 @@ const methodOverride = require('method-override')
 
 //imports Routes
 // const saveTipsRoutes = require('/routes/saveTipsRoutes.')
-// const greenWaysRoutes = require('/routes/greenWaysRoutes.js')
+const greenWaysRoutes = require('./routes/greenWaysRoutes.js')
 const participantRoutes = require('./routes/participantRoutes.js')
 
 //sets up hbs
@@ -19,7 +19,7 @@ app.use(methodOverride('_method'))
 
 //base for model routes
 app.use('/participants', participantRoutes)
-// app.use('/waystobegreen', greenWaysRoutes)
+app.use('/greenWays', greenWaysRoutes)
 // app.use('/savingTips', saveTipsRoutes)
 
 //enables local host or heroku hosting

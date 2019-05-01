@@ -8,9 +8,9 @@ const participantController = require('../controllers/participantController.js')
 router.get('/', participantController.index)
 router.post('/', participantController.create)
 router.get('/new', participantController.new)
-router.get('/:userId', participantController.show)
-router.put('/:userId', participantController.update)
-router.delete('/:userId', participantController.delete)
+router.get('/:participantId', participantController.show)
+router.put('/:participantId', participantController.update)
+router.delete('/:participantId', participantController.delete)
 
 
 //exports routes
