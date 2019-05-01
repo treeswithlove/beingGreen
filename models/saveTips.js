@@ -1,10 +1,10 @@
-const mongoose = require('..db/connection.js')
+const mongoose = require('../db/connection.js')
 const Schema = mongoose.Schema
 
 const SaveTipsSchema = new Schema({
     wasteReducedName: String,
-    monthlySavings: String,
-    timeItTakes: String,
+    monthlySavings: Number,
+    timeItTakes: Number,
     whatToDo: String
 })
 

@@ -27,11 +27,13 @@ const GreenWayController = {
         newGreenWay = (req.body)
         GreenWayModel.create(newGreenWay).then(() => res.redirect("/greenWays"))
     },
+    //updates and returns to index.hbs
     update: function(req,res){
         GreenWayModel.findByIdAndUpdate(req.params.greenWayId, req.body).then(() => {
             res.redirect("/greenWays")
         })
     },
+    //deletes and returns to index.hbs
     delete: function(req,res){
         GreenWayModel.findByIdAndRemove(req.params.greenWayId).then(() => {
             res.redirect("/greenWays")

@@ -1,0 +1,23 @@
+{{!-- shows one saveTip --}}
+<header>
+    {{!-- list of saveTip information --}}
+<h1>{{saveTip.wasteReducedName}}</h1>
+<h4>{{saveTip.monthlySavings}}</h4>
+<h4>{{saveTip.timeItTakes}}</h4>
+<h4>{{saveTip.whatToDo}}</h4>
+
+</header>
+<main>
+<form action="/saveTips/{{saveTip.id}}?_method=put" method="POST">
+    <p>Waste Reduction Method Name:</p><input type="text" name="wasteReducedName"></br>
+    <p>Monthly Savings:</p><input type="number" name="monthlySavings"></br>
+    <p>Hours it Takes:</p><input type="number" name="timeItTakes"></br>
+    <p>What to Do:</p><input type="text" name="whatToDo"></br>
+{{!-- Update Button --}}
+    <input type="submit" value="Update saveTip" class="button">
+</form>
+<form action="/saveTips/{{saveTip._id}}?_method=delete" method="POST">
+{{!-- delete Button --}}
+<input type="submit" value="Delete saveTip" class="button">
+</form>
+</main>
