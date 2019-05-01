@@ -28,7 +28,7 @@ const ParticipantController = {
         ParticipantModel.create(newParticipant).then(() => res.redirect("/participants"))
     },
     update: function(req,res){
-        ParticipantModel.findByIdAndUpdate(req.params.participantId, req.body).then(() => {
+        ParticipantModel.findByIdAndUpdate(req.params.participantId, req.body ).then(() => {
             res.redirect("/participants")
         })
     },

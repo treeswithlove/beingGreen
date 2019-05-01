@@ -1,9 +1,9 @@
 {{!-- shows one greenWay --}}
 <header>
     {{!-- list of greenWay information --}}
-<h4>{{greenWay.wayToBeGreenName}}</h4>
+<h1>{{greenWay.wayToBeGreenName}}</h1>
 <h4>{{greenWay.timeItTakes}}</h4>
-<h1>{{greenWay.whatToDo}}</h1>
+<h4>{{greenWay.whatToDo}}</h4>
 
 </header>
 <main>
@@ -12,7 +12,7 @@
     <p>Hours it Takes: </p><input type="number" name="timeItTakes"></br>
     <p>What to Do:</p><input type="text" name="whatToDo"></br>
 {{!-- Update Button --}}
-    <input type="submit" value="Update greenWay" class="button">
+    <input type="submit" value="Update GreenWay" class="button">
 </form>
 <form action="/greenWays/{{greenWay._id}}?_method=delete" method="POST">
 {{!-- delete Button --}}

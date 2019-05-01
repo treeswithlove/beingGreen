@@ -1,12 +1,12 @@
 const mongoose = require('../db/connection.js')
 const Schema = mongoose.Schema
 
-const GreenWaysSchema = new Schema({
+const GreenWaySchema = new Schema({
     wayToBeGreenName: String,
     timeItTakes: String,
     whatToDo: String
 })
 
-const GreenWaysModel = mongoose.model('GreenWays', GreenWaysSchema)
+const GreenWayModel = mongoose.model("GreenWay", GreenWaySchema)
 
-module.exports = GreenWaysModel
+module.exports = GreenWayModel

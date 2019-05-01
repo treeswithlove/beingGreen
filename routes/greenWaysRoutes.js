@@ -8,9 +8,9 @@ const greenWaysController = require('../controllers/greenWaysController.js')
 router.get('/', greenWaysController.index)
 router.post('/', greenWaysController.create)
 router.get('/new', greenWaysController.new)
-router.get('/:greenWaysId', greenWaysController.show)
-router.put('/:greenWaysId', greenWaysController.update)
-router.delete('/:greenWaysId', greenWaysController.delete)
+router.get('/:greenWayId', greenWaysController.show)
+router.put('/:greenWayId', greenWaysController.update)
+router.delete('/:greenWayId', greenWaysController.delete)
 
 
 //exports routes
