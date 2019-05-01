@@ -18,6 +18,7 @@ app.use(express.json())
 app.use(methodOverride('_method'))
 
 //base for model routes
+app.get('/', (req, res) => {res.render("index")})
 app.use('/participants', participantRoutes)
 app.use('/greenWays', greenWaysRoutes)
 app.use('/saveTips', saveTipsRoutes)
