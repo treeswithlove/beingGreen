@@ -8,21 +8,23 @@ a {
     text-decoration: none;
     color: white;
 }
-ul {
+ul, footer {
     list-style: none;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
-nav, .article {
+nav, .article, footer {
    border: solid white;
    border-radius: 1rem;
 }
-nav {
+nav, footer {
     height: 7vh;
 }
 header {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 20vh;
     width: 95vw;
 }
@@ -32,7 +34,7 @@ main {
     justify-content: center;
     align-items: center;
     width: 95vw;
-    height: 50vh;
+    height: 62vh;
     margin-right: 2vw;
     margin-left: 2vw;
 }
