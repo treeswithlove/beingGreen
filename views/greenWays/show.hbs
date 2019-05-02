@@ -1,16 +1,16 @@
 {{!-- shows one greenWay --}}
 <header>
     {{!-- list of greenWay information --}}
-<h1>{{greenWay.wayToBeGreenName}}</h1>
-<h4>{{greenWay.timeItTakes}}</h4>
-<h4>{{greenWay.whatToDo}}</h4>
+<h1>Green Method: {{greenWay.wayToBeGreenName}}</h1>
+<h4>Green Hours:{{greenWay.timeItTakes}} hours</h4>
+<h4>Green Task: </br>{{greenWay.whatToDo}}</h4>
 
 </header>
 <main>
 <form action="/greenWays/{{greenWay.id}}?_method=put" method="POST">
     <p>Name of Green Method:</p><input type="text" name="wayToBeGreenName"></br>
     <p>Hours it Takes: </p><input type="number" name="timeItTakes"></br>
-    <p>What to Do:</p><input type="text" name="whatToDo"></br>
+    <p>What to Do:</p><input type="text" name="whatToDo" class="biggerInputBox"></br>
 {{!-- Update Button --}}
     <input type="submit" value="Update GreenWay" class="button">
 </form>

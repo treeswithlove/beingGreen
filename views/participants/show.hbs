@@ -1,10 +1,10 @@
 {{!-- shows one participant --}}
 <header>
     {{!-- list of participant information --}}
-<h1>{{participant.name}}</h1>
-<h4>{{participant.age}}</h4>
-<h4>{{participant.city}}</h4>
-<h4>{{participant.state}}</h4>
+<h1>Green Participant: {{participant.name}}</h1>
+<h4>Green Age:{{participant.age}}</h4>
+<h4>Green City:{{participant.city}}</h4>
+<h4>Green State:{{participant.state}}</h4>
 </header>
 <main>
 <form action="/participants/{{participant.id}}?_method=put" method="POST">

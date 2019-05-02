@@ -3,13 +3,13 @@
 <h1>Saving Tips</h1>
 <h2><a href="/saveTips/new">Add a New Saving Tip</a><h2>
 </header>
-<main>
+<main class="mainArticle">
 {{#each saveTip}}
 <a href="/saveTips/{{id}}" class="article">
 <img>
-<p>{{wasteReducedName}}</p>
-<p>{{monthlySavings}}</p>
-<p>{{timeItTakes}}</p>
+<p>Green Saving Method: {{wasteReducedName}}</p>
+<p>Green Savings: ${{monthlySavings}}</p>
+<p>Green Hours: {{timeItTakes}}</p>
 </a>
 {{/each}}
 </main>

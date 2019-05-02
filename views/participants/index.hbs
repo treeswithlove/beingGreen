@@ -3,13 +3,13 @@
 <h1>Participants</h1>
 <h2><a href="/participants/new">Become a Pariticipant</a></h2>
 </header>
-<main>
+<main class="mainArticle">
 {{#each participant}}
 <a href="/participants/{{id}}" class="article">
 <img>
-<p>{{name}}</p>
-<p>{{age}}</p>
-<p>{{state}}</p>
+<p>Green Paricipant: {{name}}</p>
+<p>Has been around the sun {{age}} times!</p>
+<p>Green State: {{state}}</p>
 </a>
 {{/each}}
 </main>

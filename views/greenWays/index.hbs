@@ -3,12 +3,12 @@
 <h1>GreenWays</h1>
 <h2><a href="/greenWays/new">Add a Green Method</a></h2>
 </header>
-<main>
+<main class="mainArticle">
 {{#each greenWay}}
 <a href="/greenWays/{{id}}" class="article">
 <img>
-<p>{{wayToBeGreenName}}</p>
-<p>{{timeItTakes}}</p>
+<p>Green Method: {{wayToBeGreenName}}</p>
+<p>Green Hours: {{timeItTakes}}</p>
 </a>
 {{/each}}
 </main>

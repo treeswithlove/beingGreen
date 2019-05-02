@@ -1,10 +1,12 @@
 {{!-- shows one saveTip --}}
 <header>
     {{!-- list of saveTip information --}}
-<h1>{{saveTip.wasteReducedName}}</h1>
-<h4>{{saveTip.monthlySavings}}</h4>
-<h4>{{saveTip.timeItTakes}}</h4>
-<h4>{{saveTip.whatToDo}}</h4>
+<ul>
+<li><h1>Green Saving Method: {{saveTip.wasteReducedName}}</h1></li>
+<li><h4>Green Savings: ${{saveTip.monthlySavings}}</h4></li>
+<li><h4>Green Hours:  {{saveTip.timeItTakes}} hours</h4></li>
+<li><h4>Green Saving Technique: </br>{{saveTip.whatToDo}}</h4></li>
+</ul>
 
 </header>
 <main>
@@ -12,7 +14,7 @@
     <p>Waste Reduction Method Name:</p><input type="text" name="wasteReducedName"></br>
     <p>Monthly Savings:</p><input type="number" name="monthlySavings"></br>
     <p>Hours it Takes:</p><input type="number" name="timeItTakes"></br>
-    <p>What to Do:</p><input type="text" name="whatToDo"></br>
+    <p>What to Do:</p><input type="text" name="whatToDo" class="biggerInputBox"></br>
 {{!-- Update Button --}}
     <input type="submit" value="Update saveTip" class="button">
 </form>
