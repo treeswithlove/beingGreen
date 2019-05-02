@@ -1,10 +1,13 @@
 {{!-- shows one participant --}}
+<div class="content">
 <header>
     {{!-- list of participant information --}}
-<h1>Green Participant: {{participant.name}}</h1>
-<h4>Green Age:{{participant.age}}</h4>
-<h4>Green City:{{participant.city}}</h4>
-<h4>Green State:{{participant.state}}</h4>
+<ul>
+<li><h1>Green Participant: {{participant.name}}</h1></li>
+<li><h4>Green Age:{{participant.age}}</h4></li>
+<li><h4>Green City:{{participant.city}}</h4></li>
+<li><h4>Green State:{{participant.state}}</h4></li>
+</ul>
 </header>
 <main>
 <form action="/participants/{{participant.id}}?_method=put" method="POST">
@@ -18,3 +21,4 @@
 <input type="submit" value="Delete Participant" class="button">
 </form>
 </main>
+</div>

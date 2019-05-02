@@ -1,10 +1,12 @@
 {{!-- shows one greenWay --}}
+<div class="content">
 <header>
     {{!-- list of greenWay information --}}
-<h1>Green Method: {{greenWay.wayToBeGreenName}}</h1>
-<h4>Green Hours:{{greenWay.timeItTakes}} hours</h4>
-<h4>Green Task: </br>{{greenWay.whatToDo}}</h4>
-
+    <ul>
+<li><h1>Green Method: {{greenWay.wayToBeGreenName}}</h1></li>
+<li><h4>Green Hours:{{greenWay.timeItTakes}} hours</h4></li>
+<li><h4>Green Task: </br>{{greenWay.whatToDo}}</h4></li>
+</ul>
 </header>
 <main>
 <form action="/greenWays/{{greenWay.id}}?_method=put" method="POST">
@@ -19,3 +21,4 @@
 <input type="submit" value="Delete GreenWay" class="button">
 </form>
 </main>
+</div>
