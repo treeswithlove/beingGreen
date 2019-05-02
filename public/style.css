@@ -1,9 +1,10 @@
 body {
-    background-color: green;
+    /* background-color: green; */
     color: white;
     width: 100%;
     height: 100%;
     overflow: scroll;
+    background:  rgba(5, 90, 5, 0.4) url("./images/beautiful-beauty-color-340932.jpg");
 }
 a {
     text-decoration: none;
@@ -16,13 +17,15 @@ nav > ul, footer {
     justify-content: space-around;
 }
 nav, .article, footer {
-   border: solid white;
+   
    border-radius: 1rem;
+   background:  rgba(5, 90, 5, 0.4);
 }
 nav, footer {
     height: 7vh;
     position: fixed;
     width: 98vw;
+    border: solid rgba(102, 119, 100, 0.4);
 }
 nav {
     top:0;
@@ -34,8 +37,12 @@ header {
     padding-top: 9vh;
     height: 30vh;
     width: 95vw;
+    
 }
-header > ul {
+header > ul, form {
+    background:  rgba(5, 90, 5, 0.4);
+    /* padding-right: 3rem; */
+    border-radius: 2rem;
     /* margin-bottom: 5rem; */
     list-style: none;
     display: flex;
@@ -55,8 +62,8 @@ main {
     height: 57vh;
     margin-right: 2vw;
     margin-left: 2vw;
-    
 }
+
 .article {
     width: 100%;
     height: 30%;
@@ -64,14 +71,18 @@ main {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    border: solid rgb(102, 119, 100);
 }
 .mainArticle :hover {
-    background: white;
-    color: green;
+    color: rgba(131, 238, 131, 0.767);
 }
 footer {
     bottom: 0;
 }
-/* img {
-
-} */
+img {
+background: url("./images/botanical-close-up-color-788485.jpg") center;
+height: 6rem;
+width: 6rem;
+border: solid rgba(102, 119, 100, 0.4);
+border-radius: 3rem;
+}
