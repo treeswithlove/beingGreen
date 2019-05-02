@@ -1,7 +1,15 @@
 {{!-- shows all saveTips --}}
-
+<header>
 <h1>Saving Tips</h1>
-<a href="/saveTip s/new">New</a>
+<h2><a href="/saveTips/new">New</a><h2>
+</header>
+<main>
 {{#each saveTip}}
-<a href="/saveTips/{{id}}"><p>{{wasteReducedName}}</p></a>
+<a href="/saveTips/{{id}}" class="article">
+<img>
+<p>{{wasteReducedName}}</p>
+<p>{{monthlySavings}}</p>
+<p>{{timeItTakes}}</p>
+</a>
 {{/each}}
+</main>

@@ -1,7 +1,14 @@
 {{!-- shows all GreenWays --}}
-
+<header>
 <h1>GreenWays</h1>
-<a href="/greenWays/new">New</a>
+<h2><a href="/greenWays/new">New</a></h2>
+</header>
+<main>
 {{#each greenWay}}
-<a href="/greenWays/{{id}}"><p>{{wayToBeGreenName}}</p></a>
+<a href="/greenWays/{{id}}" class="article">
+<img>
+<p>{{wayToBeGreenName}}</p>
+<p>{{timeItTakes}}</p>
+</a>
 {{/each}}
+</main>

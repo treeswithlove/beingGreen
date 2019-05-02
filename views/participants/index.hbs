@@ -1,7 +1,15 @@
 {{!-- shows all participants --}}
-
+<header>
 <h1>Participants</h1>
-<a href="/participants/new">New</a>
+<h2><a href="/participants/new">New</a></h2>
+</header>
+<main>
 {{#each participant}}
-<a href="/participants/{{id}}"><p>{{name}}</p></a><p>{{age}}</p><p>{{state}}</p>
+<a href="/participants/{{id}}" class="article">
+<img>
+<p>{{name}}</p>
+<p>{{age}}</p>
+<p>{{state}}</p>
+</a>
 {{/each}}
+</main>
